@@ -18,7 +18,7 @@ services:
      depends_on:
        - mysql_drupaldb
      container_name: drupal_web
-     image: heydeb/drupal9_composer_drush_ubuntu_nginx_mysql:latest
+     image: heydeb/drupal10_ubuntu_nginx_mysql
      volumes:
       - $PWD/drupal_files:/var/www/html/waterfallhandbook
      tty: true

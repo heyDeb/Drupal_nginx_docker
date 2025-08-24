@@ -1,18 +1,20 @@
 # D9_nginx_docker
 Now, you can use this with your docker-compose yaml to connect separate DB host and execute the project.
 
-This image is built up on Ubuntu 22.04 and top of it we have nginx web server with PHP 8.1 packages are installed. PHP configuration is already made, and installation of all PHP modules and composer are done to run Drupal 9 based web application.
+This image is built up on Ubuntu 22.04 and top of it we have nginx web server with PHP 8.1 packages are installed. PHP configuration is already made, and installation of all PHP modules and composer are done to run Drupal 10 based web application.
 
 Example docker-compose.yaml code can be downloaded here : https://github.com/heyDeb/D9_nginx_docker
 
-# After cloning the project from github, run the below command. docker-compose up -d
+# After cloning the project from github, run the below command. 
+
+$: docker-compose up -d
 
 then, run the following command to know the container name and in this case its drupal9_web
-: docker ps
+$: docker ps
 
-<strong>docker exec -ti drupal9_web bash</strong>
+<strong>docker-compose exec drupalweb bash</strong> 
 
-if you are working from windows os git bash, then add a prefix winpty before docker exec command.
+if you are working from windows os git bash, then add a prefix <strong>winpty<strong> before docker exec command.
 cd /var/www/html/waterfallhandbook
 <strong>composer install</strong>
 
