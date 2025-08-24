@@ -1,9 +1,10 @@
-# D9_nginx_docker
+# Drupal10_nginx_docker
 Now, you can use this with your docker-compose yaml to connect separate DB host and execute the project.
 
-This image is built up on Ubuntu 22.04 and top of it we have nginx web server with PHP 8.1 packages are installed. PHP configuration is already made, and installation of all PHP modules and composer are done to run Drupal 10 based web application.
+This image is built up on Ubuntu 24.04 and top of it we have nginx web server with PHP 8.4 packages are installed. PHP configuration is already made, and installation of all PHP modules and composer are done to run Drupal 10 based web application.
 
 Example docker-compose.yaml code can be downloaded here : https://github.com/heyDeb/D9_nginx_docker
+And Docker Hub: https://hub.docker.com/repository/docker/heydeb/drupal10_ubuntu_nginx_mysql/
 
 # After cloning the project from github, run the below command. 
 
