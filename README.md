@@ -14,13 +14,15 @@ $: docker ps
 
 <strong>docker-compose exec drupalweb bash</strong> 
 
-if you are working from windows os git bash, then add a prefix <strong>winpty<strong> before docker exec command.
-cd /var/www/html/waterfallhandbook
-<strong>composer install</strong>
+if you are working from windows os git bash, then add a prefix <strong>winpty</strong> before docker exec command.
+
+$: cd /var/www/html/waterfallhandbook
+
+$: <strong>composer install</strong>
 
 # And to install drush and drush launcher: composer require drush/drush
-wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
-chmod +x drush.phar && mv drush.phar /usr/local/bin/drush
-drush st
+$: wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
+$: chmod +x drush.phar && mv drush.phar /usr/local/bin/drush
+$: drush st
 
 Hit the URL in your browser if you have localhost, http://localhost:8998/ That's All.
